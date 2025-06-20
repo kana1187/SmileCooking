@@ -1,18 +1,21 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
 		<!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
 		<!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<!-- ウェブページのタイトルに使用されます。 -->
-		<title>Flower Room</title>
+		<title>Smile Cooking</title>
 		<!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
-		<meta name="description" content="フラワーショップのサイトです" />
+		<meta
+			name="description"
+			content="お料理教室「Smile Cooking」のサイトです"
+		/>
 		<!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
 		<meta name="format-detection" content="telephone=no" />
-		<!-- ファビコンを設定しています。 -->
-		<link rel="shortcut icon" href="img/favicon.ico" />
 		<!-- reset.cssは、destyleを使用しています。 -->
 		<link
 			rel="stylesheet"
@@ -20,86 +23,112 @@
 		/>
 		<!-- スタイルシート（css）を呼び出しています -->
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="image/favicon.ico" />
 	</head>
-
 	<body>
-	   <!--header-->
-	   <header class="header">
-		<h1 class="header-title">Flower Room</h1>
-		<nav>
-			<ul class="header-nav">
-				<li>
-					<a href="#pickup">PICK UP</a>
-				</li>
-				<li>
-					<a href="#shop">SHOP</a>
-				</li>
-			</ul>
-		</nav>
-	   </header>
-	   <!--header-->	   
-	   <!--firstview-->
-	   <section class="firstview">
-		<picture>
-			<source media="(max-width: 560px)" srcset="img/spring_sp.png"> 
-			<img src="img/spring_pc.png" alt="花籠を持った女性" class="firstview-img">
-		</picture>
-	   </section>
-	   <!--/firstview-->
-	   <!--pick up-->
-	   <section class="pickup">
-		<div class="u-sectionWrapper">
-			<h2 class="pickup-title">PICK UP</h2>
-			<div class="pickup-item">
-				<div class="pickup-imgContainer">
-					<img class="pickup-img" src="img/hd-wallpaper.png" alt="窓と花の画像">
-				</div>
-				<div class="pickup-textContainer">
-					<h3 class="pickup-textTitle">お花の定期便始めました</h3>
-					<p class="pickup-text">
-						届いたら花瓶に入れるだけ。
-						<br>
-						お手軽に花のある生活を始めてみませんか？
-					</p>
-					<div class="pickup-btn">
-						<a href="#" class="pickup-btnLink">Read More</a>
-					</div>
-				</div>
+		<!--header-->
+		<header class="header">
+			<div class="header-inner u-wrapper">
+				<h1 class="header-title">Smile Cooking</h1>
+				<nav class="header-nav">
+					<ul class="header-navList">
+						<li class="header-navItem">Course</li>
+						<li class="header-navItem">News</li>
+						<li class="header-navItem">Contact</li>
+					</ul>
+				</nav>
 			</div>
-			<div class="pickup-item-reverse">
-				<div class="pickup-imgContainer">
-					<img class="pickup-img" src="img/summer.png" alt="テーブルと花の画像">
-				</div>
-				<div class="pickup-textContainer">
-					<h3 class="pickup-textTitle">カフェのご案内</h3>
-					<p class="pickup-text">
-						店舗横にカフェを併設しています。
-						<br>
-						季節のお花を眺めながらゆったりとした時間をお過ごしください。
-					</p>
-					<div class="pickup-btn">
-						<a href="#" class="pickup-btnLink">Read More</a>
-					</div>
-				</div>
-			</div>
+		</header>
+		<!--/header-->
+		<!--firstview-->
+		<div class="firstview">
+			<h2 class="firstview-title">Smile Cooking</h2>
 		</div>
-	   </section>
-	   <!--/pick up-->
-	   <!--shop-->
-	   <section class="shop">
-		<div class="u-sectionWrapper">
-			<h2 class="shop-title">SHOP</h2>
-			<p class="shop-text">Flower Roomの店舗情報はこちらをご覧ください。</p>
-			<div class="shop-btn">
-				<a href="#" class="shop-btnLink">View More</a>
+		<!--/firstview-->
+		<!--Course-->
+		<section class="Course">
+			<div class="u-wrapper">
+				<h2 class="u-sectionTitle">Course</h2>
+				<p class="u-sectionSubTitle">コース</p>
+				<ul class="course-cards">
+					<li class="course-card">
+						<img class="course-cardImage" src="image/course1.png" alt="お料理コース">
+						<div class="course-textBox">
+							<h3 class="course-cardTitle">お料理コース</h3>
+							<p class="course-cardText">親子で基本的な料理のテクニックを学びながら、一緒に楽しい時間を過ごしましょう。旬の食材をを使ったメニューやバランスの取れた食事を作るコツを学べます。初めて料理をするお子様にも安全に取り組んでいただけます。</p>
+						</div>
+					</li>
+					<li class="course-card">
+						<img class="course-cardImage" src="image/course2.png" alt="パン作りコース">
+						<div class="course-textBox">
+							<h3 class="course-cardTitle">パン作りコース</h3>
+							<p class="course-cardText">ふっくらとした美味しいパンを親子で一緒に作りましょう！生地作りから焼き上げまでのプロセスを楽しく学び、自宅でも再現できるレシピをご紹介します。手作りのパンで毎日の食卓をもっと楽しく、豊かにすることができます。</p>
+						</div>
+					</li>
+					<li class="course-card">
+						<img class="course-cardImage" src="image/course3.png" alt="お菓子作りコース">
+						<div class="course-textBox">
+							<h3 class="course-cardTitle">お菓子作りコース</h3>
+							<p class="course-cardText">親子でスイーツ作りを楽しみましょう。簡単で可愛らしいお菓子から、ちょっとしたチャレンジレシピまで、多彩なメニューを用意しています。特別な日のためのデザートや日常のおやつ作りを通して、お子様との絆が深まります。</p>
+						</div>
+					</li>
+				</ul>
 			</div>
-		</div>
-	   </section>
-	   <!--/shop-->
-	   <!--footer-->
-	   <footer class="footer">
-		<small class="footer-copyright">©Copy right</small>
-	   </footer>
-	   <!--/footer-->
+		</section>
+		<!--/course-->
+		<!--news-->
+		<section class="news">
+			<div class="u-wrapper">
+				<h2 class="u-sectionTitle">News</h2>
+				<p class="u-sectionSubTitle">新着情報</p>
+				<dl class="news-list">
+					<div class="news-item">
+						<dt class="news-date">2024/6/15</dt>
+						<dd class="news-description">七夕イベントのお知らせ</dd>
+					</div>
+					<div class="news-item">
+						<dt class="news-date">2024/2/23</dt>
+						<dd class="news-description">お友達紹介キャンペーンについて</dd>
+					</div>
+					<div class="news-item">
+						<dt class="news-date">2023/12/1</dt>
+						<dd class="news-description">年末年始の開講日のご案内</dd>
+					</div>
+				</dl>
+				<button class="u-button">一覧を見る</button>
+			</div>
+		</section>
+		<!--/news-->
+		<!--contact-->
+		<section class="contact">
+			<div class="u-wrapper">
+				<h2 class="u-sectionTitle">Contact</h2>
+				<p class="u-sectionSubTitle">お問い合わせ</p>
+				<form class="contact-form">
+					<label for="name" class="contact-label">お名前</label>
+					<input type="text" name="name" class="contact-input">
+				</form>
+				<form class="contact-form">
+					<label for="email" class="contact-label">メールアドレス</label>
+					<input type="email" name="email" class="contact-input">
+				</form>
+				<form class="contact-form">
+					<label for="message" class="contact-label">お問い合わせ内容</label>
+					<input type="message" name="message" class="contact-textarea">
+				</form>
+				<button type="submit" class="u-button">送　信</button>
+			</div>
+		</section>
+		<!--/contact-->
+		<!--footer-->
+		<footer class="footer">
+			<div class="footer-inner">
+				<p class="footer-text">©Smile Cooking.2024</p>
+			</div>
+		</footer>
 	</body>
 </html>
